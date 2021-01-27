@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".frgament.FavouriteCitiesFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/purple_700"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:drawableLeft="@drawable/ic_arrow_left"
+                android:textSize="16sp"
+                android:text="Favourite Destinations"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:text="No City added!"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/rl_toolbar"
+            android:id="@+id/recylerView"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/favourite_cities_rows" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/currentWeatherFragment">
+
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.example.weatherapp.frgament.CurrentWeatherFragment"
+        android:label="CurrentWeatherFragment" >
+        <action
+            android:id="@+id/action_currentWeatherFragment_to_favouriteCitiesFragment"
+            app:destination="@id/favouriteCitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteCitiesFragment"
+        android:name="com.example.weatherapp.frgament.FavouriteCitiesFragment"
+        android:label="FavouriteCitiesFragment" />
+</navigation>
