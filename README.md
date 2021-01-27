@@ -12,7 +12,7 @@
 **Highlights**
 - Use [OpenWeatherMap] API
 - Use Material Design 2
-- Add City in a 
+- Can add city in favourite list
 - Use Room Database
 
 
